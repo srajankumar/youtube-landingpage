@@ -1,7 +1,7 @@
 // import Image from "next/image";
 // import { Inter } from "next/font/google";
 // import Header from "./components/Header";
-import Sidebar from "../pages/components/Sidebar";
+// import Sidebar from "../pages/components/Sidebar";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -18,15 +18,17 @@ import Sidebar from "../pages/components/Sidebar";
 
 import dynamic from "next/dynamic";
 
-const DynamicComponentWithNoSSR = dynamic(() => import("./components/Header"), {
+const DynamicComponentWithNoSSR = dynamic(() => import("./components/Main"), {
   ssr: false,
 });
 
 const HomePage = () => (
-  <div>
-    <DynamicComponentWithNoSSR />
-    <Sidebar />
-  </div>
+  <main>
+    <div className="fixed">
+      <DynamicComponentWithNoSSR />
+      {/* <Sidebar /> */}
+    </div>
+  </main>
 );
 
 export default HomePage;
