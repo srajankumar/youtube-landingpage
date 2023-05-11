@@ -3,7 +3,172 @@ import React from "react";
 function Header() {
   return (
     <div className="fixed w-full h-full">
-      <div id="menuToggle" className="">
+      <div id="menuToggle">
+        {/* top bar bg */}
+        <div className="bg-[#111111] fixed top-0 left-0 w-full p-16"></div>
+        {/* sidebar 4 buttons */}
+        <div className="fixed top-14 left-0 pt-5 pb-96 pl-1 pr-4 bg-[#111111]">
+          <div className="flex flex-col py-3 cursor-pointer items-center rounded-lg text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-50 dark:hover:bg-[#252525] dark:focus:bg-white/10 dark:active:bg-white/10">
+            <div className="flex justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M4 21V9l8-6l8 6v12h-6v-7h-4v7H4Z"
+                />
+              </svg>
+            </div>
+
+            <div className="flex py-1 font-normal justify-center text-xs">
+              Home
+            </div>
+          </div>
+          <div className="flex flex-col py-3 cursor-pointer items-center rounded-lg text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-50 dark:hover:bg-[#252525] dark:focus:bg-white/10 dark:active:bg-white/10">
+            <div className="flex justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M4 21V9l8-6l8 6v12h-6v-7h-4v7H4Z"
+                />
+              </svg>
+            </div>
+
+            <div className="flex py-1 font-normal justify-center text-xs">
+              Shorts
+            </div>
+          </div>
+          <div className="flex flex-col py-3 cursor-pointer items-center rounded-lg text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-50 dark:hover:bg-[#252525] dark:focus:bg-white/10 dark:active:bg-white/10">
+            <div className="flex justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M4 6h16v2H4zm2-4h12v2H6zm14 8H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm0 10H4v-8h16v8zm-10-7.27v6.53L16 16z"
+                />
+              </svg>
+            </div>
+
+            <div className="flex py-1 font-normal justify-center text-xs">
+              Subscriptions
+            </div>
+          </div>{" "}
+          <div className="flex flex-col py-3 cursor-pointer items-center rounded-lg text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-50 dark:hover:bg-[#252525] dark:focus:bg-white/10 dark:active:bg-white/10">
+            <div className="flex justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m11.5 14.5l7-4.5l-7-4.5v9ZM6 18V2h16v16H6Zm2-2h12V4H8v12Zm-6 6V6h2v14h14v2H2ZM8 4v12V4Z"
+                />
+              </svg>
+            </div>
+            <div className="flex py-1 font-normal justify-center text-xs">
+              Library
+            </div>
+          </div>
+        </div>
+        {/* Top scroll bar kind of thing */}
+        <div className="bg-[#111111] fixed top-20 left-20 w-full ">
+          <ul className="flex ml-2">
+            <li class="relative mx-2">
+              <a class="flex bg-gray-100 w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-800 font-semibold px-3">All</div>
+              </a>
+            </li>
+            <li class="relative mx-2">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-200 font-semibold px-3">CSS</div>
+              </a>
+            </li>
+            <li class="relative mx-2">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-200 font-semibold px-3">
+                  Javascript
+                </div>
+              </a>
+            </li>
+            <li class="relative mx-2">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-200 font-semibold px-3">
+                  Frameworks
+                </div>
+              </a>
+            </li>
+            <li class="relative mx-2">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-200 font-semibold px-3">
+                  One Piece
+                </div>
+              </a>
+            </li>
+            <li class="relative mx-2">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-200 font-semibold px-3">Manhwa</div>
+              </a>
+            </li>
+            <li class="relative mx-2">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-200 font-semibold px-3">Anime</div>
+              </a>
+            </li>
+            <li class="relative mx-2">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-200 font-semibold px-3">
+                  Pencil Sketch
+                </div>
+              </a>
+            </li>
+            <li class="relative mx-2">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-200 font-semibold px-3">Tech</div>
+              </a>
+            </li>
+            <li class="relative mx-2">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-200 font-semibold px-3">MacBook</div>
+              </a>
+            </li>
+            <li class="relative mx-2">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-200 font-semibold px-3">
+                  Smartphones
+                </div>
+              </a>
+            </li>
+            <li class="relative mx-2">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-200 font-semibold px-3">Movies</div>
+              </a>
+            </li>
+            <li class="relative mx-2">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-200 font-semibold px-3">Pop</div>
+              </a>
+            </li>
+            <li class="relative mx-2">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+                <div className=" text-gray-200 font-semibold px-3">Music</div>
+              </a>
+            </li>
+          </ul>
+        </div>
         <input className="togglee" type="checkbox" />
         <div className="fixed top-0 left-2 container mx-auto flex flex-wrap pl-3.5 pt-4 flex-row items-center">
           <div className="flex pt-1 pb-5">
@@ -24,7 +189,7 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="flex w-full left-1/4 pl-14 pt-4 fixed top-0">
+        <div className="flex md:visible invisible w-full left-1/4 pl-14 pt-4 fixed top-0">
           <input
             type="text"
             id="footer-field"
@@ -45,6 +210,61 @@ function Header() {
               />
             </svg>
           </button>
+          <div className="px-1"></div>
+          <button class="flex bg-[#181818] cursor-pointer items-center truncate rounded-full p-2 text-[0.875rem] outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-100 dark:hover:bg-[#303030] dark:focus:bg-white/10 dark:active:bg-white/10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12 14q-1.25 0-2.125-.875T9 11V5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5v6q0 1.25-.875 2.125T12 14Zm0 7q-.425 0-.713-.288T11 20v-2.1q-2.325-.3-3.95-1.925t-1.975-3.9q-.075-.425.225-.75T6.1 11q.35 0 .625.262t.35.638q.325 1.75 1.7 2.925T12 16q1.85 0 3.225-1.175t1.7-2.925q.075-.375.362-.638t.638-.262q.475 0 .775.325t.225.75q-.35 2.275-1.975 3.9T13 17.9V20q0 .425-.288.713T12 21Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div className="fixed top-0 flex right-3 ">
+          <div className="px-4 py-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M10 16q.425 0 .713-.288T11 15v-2h2q.425 0 .713-.288T14 12q0-.425-.288-.713T13 11h-2V9q0-.425-.288-.713T10 8q-.425 0-.713.288T9 9v2H7q-.425 0-.713.288T6 12q0 .425.288.713T7 13h2v2q0 .425.288.713T10 16Zm-6 4q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h12q.825 0 1.413.588T18 6v4.5l3.15-3.15q.225-.225.537-.113T22 7.7v8.6q0 .35-.313.463t-.537-.113L18 13.5V18q0 .825-.588 1.413T16 20H4Zm0-2h12V6H4v12Zm0 0V6v12Z"
+              />
+            </svg>
+          </div>
+          <div className="px-4 py-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M10 21h4c0 1.1-.9 2-2 2s-2-.9-2-2m11-2v1H3v-1l2-2v-6c0-3.1 2-5.8 5-6.7V4c0-1.1.9-2 2-2s2 .9 2 2v.3c3 .9 5 3.6 5 6.7v6l2 2m-4-8c0-2.8-2.2-5-5-5s-5 2.2-5 5v7h10v-7Z"
+              />
+            </svg>
+          </div>
+          <div className="px-4 pt-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12 19.2c-2.5 0-4.71-1.28-6-3.2c.03-2 4-3.1 6-3.1s5.97 1.1 6 3.1a7.232 7.232 0 0 1-6 3.2M12 5a3 3 0 0 1 3 3a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3m0-3A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10c0-5.53-4.5-10-10-10Z"
+              />
+            </svg>
+          </div>
         </div>
         <ul
           id="menu"
