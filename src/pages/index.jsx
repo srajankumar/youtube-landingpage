@@ -41,11 +41,13 @@ export default HomePage; */
 
 import React from "react";
 // import Post from "../components/Post";
+import { Sidenav, initTE } from "tw-elements";
+
+initTE({ Sidenav });
 
 const Home = () => {
   return (
     <div>
-      <div className="text-lg font-bold mb-4">Contents below:</div>
       <div>
         {/* <!-- Sidenav --> */}
         <div className="container mx-auto flex flex-wrap pl-2 pt-4 flex-row items-center">
