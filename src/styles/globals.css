@@ -18,45 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-a {
-  text-decoration: none;
-  color: #1e1e23;
-  opacity: 1;
-  font-family: "work sans", sans serif;
-  font-size: 1.5em;
-  font-weight: 400;
-  transition: 200ms;
-}
-a:hover {
-  opacity: 0.5;
-}
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-.phone {
-  background-color: #36383f;
-  width: 100%;
-  height: 100vh;
-}
-.content {
-  width: 100%;
-  height: 100%;
-  background-color: #f5f6fa;
-  overflow: hidden;
-}
-nav {
-  background-color: #1e1e23;
-  height: 65px;
+  background: #111111;
 }
 
 #menuToggle {
@@ -70,68 +32,26 @@ nav {
   user-select: none;
 }
 
-#menuToggle input {
+.togglee {
   display: flex;
-  width: 40px;
-  height: 32px;
+  width: 1.5rem;
+  height: 1.5rem;
   position: absolute;
   cursor: pointer;
   opacity: 0;
   z-index: 2;
 }
 
-#menuToggle span {
-  display: flex;
-  width: 29px;
-  height: 2px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #ffffff;
-  z-index: 1;
-  transform-origin: 5px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-}
-
-#menuToggle span:first-child {
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-3px, -1px);
-  background: #36383f;
-}
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
 #menu {
   position: absolute;
-  width: 180px;
-  height: 400px;
-  box-shadow: 0 0 10px #85888c;
   margin: -50px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background-color: #f5f6fa;
-  -webkit-font-smoothing: antialiased;
+  background-color: #111111;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 #menu li {
-  padding: 10px 0;
   transition-delay: 2s;
 }
 
