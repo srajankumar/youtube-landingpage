@@ -6,10 +6,10 @@ const Body = () => {
     <div>
       <div>
         <section>
-          <div class="container pl-16 pr-1 py-24 mx-auto">
-            <div class="flex flex-wrap m-4">
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+          <div class="container md:w-auto w-7 md:pl-16 pr-1 py-24 mx-auto">
+            <div class="flex flex-wrap md:m-4 md:ml-4 mt-10">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -45,9 +45,9 @@ const Body = () => {
                     </div>
                   </div>
                 </div>
-              </div>{" "}
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -83,9 +83,9 @@ const Body = () => {
                     </div>
                   </div>
                 </div>
-              </div>{" "}
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -121,9 +121,9 @@ const Body = () => {
                     </div>
                   </div>
                 </div>
-              </div>{" "}
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -159,9 +159,9 @@ const Body = () => {
                     </div>
                   </div>
                 </div>
-              </div>{" "}
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -197,9 +197,9 @@ const Body = () => {
                     </div>
                   </div>
                 </div>
-              </div>{" "}
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -235,9 +235,9 @@ const Body = () => {
                     </div>
                   </div>
                 </div>
-              </div>{" "}
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -273,9 +273,9 @@ const Body = () => {
                     </div>
                   </div>
                 </div>
-              </div>{" "}
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -313,17 +313,37 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <hr className="flex mx-8 py-2" />
-            <div className="flex mx-8 py-0">
+            <hr className="flex md:mx-8 ml-5 md:w-auto w-screen py-2" />
+            <div className="flex md:w-auto w-10 md:mx-8 mx-2 py-0">
               <img
                 src="https://oursafetycentre.co.uk/wp-content/uploads/2021/07/1_sc-icons_youtube_shorts-800x800.png"
                 width={35}
                 height={30}
               />
-              <div className="font-normal px-1 text-lg ">Shorts</div>
+              <div className="font-normal px-1 md:text-lg text-2xl text-gray-50">
+                Shorts
+              </div>
             </div>
             <div className="shorts flex m-4 flex-shrink">
-              <div class=" md:w-1/2 p-4 w-full">
+              <div class=" md:visible md:p-4 w-full">
+                <a class="block h-48 md:w-auto w-28 rounded overflow-hidden">
+                  <img
+                    alt="ecommerce"
+                    class="object-cover object-center w-full h-full block"
+                    src="https://dummyimage.com/420x260"
+                  />
+                </a>
+                <div class="mt-4">
+                  <div class="text-gray-100 title-font text-lg font-medium">
+                    The Catalyzer
+                  </div>
+                  <div class="text-gray-400 font-bold py-1 text-xs tracking-widest title-font mb-1">
+                    <div className="pr-1 font-semibold text-sm">10M views</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" md:visible invisible p-4 w-full">
                 <a class="block h-48 rounded overflow-hidden">
                   <img
                     alt="ecommerce"
@@ -339,8 +359,8 @@ const Body = () => {
                     <div className="pr-1 font-semibold text-sm">10M views</div>
                   </div>
                 </div>
-              </div>{" "}
-              <div class=" md:w-1/2 p-4 w-full">
+              </div>
+              <div class=" md:visible invisible p-4 w-full">
                 <a class="block h-48 rounded overflow-hidden">
                   <img
                     alt="ecommerce"
@@ -356,8 +376,8 @@ const Body = () => {
                     <div className="pr-1 font-semibold text-sm">10M views</div>
                   </div>
                 </div>
-              </div>{" "}
-              <div class=" md:w-1/2 p-4 w-full">
+              </div>
+              <div class=" md:visible invisible p-4 w-full">
                 <a class="block h-48 rounded overflow-hidden">
                   <img
                     alt="ecommerce"
@@ -373,8 +393,8 @@ const Body = () => {
                     <div className="pr-1 font-semibold text-sm">10M views</div>
                   </div>
                 </div>
-              </div>{" "}
-              <div class=" md:w-1/2 p-4 w-full">
+              </div>
+              <div class=" md:visible invisible p-4 w-full">
                 <a class="block h-48 rounded overflow-hidden">
                   <img
                     alt="ecommerce"
@@ -390,8 +410,8 @@ const Body = () => {
                     <div className="pr-1 font-semibold text-sm">10M views</div>
                   </div>
                 </div>
-              </div>{" "}
-              <div class=" md:w-1/2 p-4 w-full">
+              </div>
+              <div class=" lg:visible invisible p-4 w-full">
                 <a class="block h-48 rounded overflow-hidden">
                   <img
                     alt="ecommerce"
@@ -407,8 +427,8 @@ const Body = () => {
                     <div className="pr-1 font-semibold text-sm">10M views</div>
                   </div>
                 </div>
-              </div>{" "}
-              <div class=" md:w-1/2 p-4 w-full">
+              </div>
+              <div class="lg:visible invisible p-4 w-full">
                 <a class="block h-48 rounded overflow-hidden">
                   <img
                     alt="ecommerce"
@@ -424,25 +444,8 @@ const Body = () => {
                     <div className="pr-1 font-semibold text-sm">10M views</div>
                   </div>
                 </div>
-              </div>{" "}
-              <div class=" md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
-                  <img
-                    alt="ecommerce"
-                    class="object-cover object-center w-full h-full block"
-                    src="https://dummyimage.com/420x260"
-                  />
-                </a>
-                <div class="mt-4">
-                  <div class="text-gray-100 title-font text-lg font-medium">
-                    The Catalyzer
-                  </div>
-                  <div class="text-gray-400 font-bold py-1 text-xs tracking-widest title-font mb-1">
-                    <div className="pr-1 font-semibold text-sm">10M views</div>
-                  </div>
-                </div>
-              </div>{" "}
-              <div class=" md:w-1/2 p-4 w-full">
+              </div>
+              <div class="lg:visible invisible p-4 w-full">
                 <a class="block h-48 rounded overflow-hidden">
                   <img
                     alt="ecommerce"
@@ -460,10 +463,10 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <hr className="flex mx-8 py-2" />
-            <div class="flex flex-wrap m-4">
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+            <hr className="flex md:mx-8 ml-5 md:w-auto w-screen py-2" />
+            <div class="flex flex-wrap md:m-4 md:ml-4 mt-10">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -500,8 +503,8 @@ const Body = () => {
                   </div>
                 </div>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -538,8 +541,8 @@ const Body = () => {
                   </div>
                 </div>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -576,8 +579,8 @@ const Body = () => {
                   </div>
                 </div>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -615,13 +618,15 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <hr className="flex mx-8 py-2" />
-            <div className="flex mx-8 py-0">
-              <div className="px-2 font-semibold text-lg ">Breaking news</div>
+            <hr className="flex md:mx-8 ml-5 md:w-auto w-screen py-2" />
+            <div className="flex md:mx-8 w-screen md:w-auto mx-2 py-0">
+              <div className="px-2 font-normal md:text-lg text-2xl text-gray-50">
+                Breaking news
+              </div>
             </div>
-            <div class="flex flex-wrap m-4">
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+            <div class="flex flex-wrap md:m-4 md:ml-4 mt-10">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -658,8 +663,8 @@ const Body = () => {
                   </div>
                 </div>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -696,8 +701,8 @@ const Body = () => {
                   </div>
                 </div>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"
@@ -734,8 +739,8 @@ const Body = () => {
                   </div>
                 </div>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                <a class="block h-48 rounded overflow-hidden">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-auto">
+                <a class="block h-48 md:w-auto w-screen rounded overflow-hidden">
                   <img
                     alt="ecommerce"
                     class="object-cover object-center w-full h-full block"

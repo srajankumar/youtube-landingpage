@@ -7,8 +7,8 @@ function Header() {
         {/* top bar bg */}
         <div className="bg-[#111111] fixed top-0 left-0 w-full p-16"></div>
         {/* sidebar 4 buttons */}
-        <div className="fixed top-14 left-0 pt-5 pb-96 pl-1 pr-4 bg-[#111111]">
-          <div className="flex flex-col py-3 cursor-pointer items-center rounded-lg text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-50 dark:hover:bg-[#252525] dark:focus:bg-white/10 dark:active:bg-white/10">
+        <div className="fixed md:visible invisible top-14 left-0 pt-5 pb-96 pl-1 pr-4 bg-[#111111]">
+          <div className="flex flex-col py-3 cursor-pointer items-center rounded-lg text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-50 hover:bg-[#252525] focus:bg-white/10 ">
             <div className="flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ function Header() {
               Home
             </div>
           </div>
-          <div className="flex flex-col py-3 cursor-pointer items-center rounded-lg text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-50 dark:hover:bg-[#252525] dark:focus:bg-white/10 dark:active:bg-white/10">
+          <div className="flex flex-col py-3 cursor-pointer items-center rounded-lg text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-50 hover:bg-[#252525] focus:bg-white/10 ">
             <div className="flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ function Header() {
               >
                 <path
                   fill="currentColor"
-                  d="M4 21V9l8-6l8 6v12h-6v-7h-4v7H4Z"
+                  d="M22 13V8l-5-3l-5 3l-5-3l-5 3v5l10 6l10-6M9 11H7v2H6v-2H4v-1h2V8h1v2h2v1m6 2c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1m3-2c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1Z"
                 />
               </svg>
             </div>
@@ -46,7 +46,7 @@ function Header() {
               Shorts
             </div>
           </div>
-          <div className="flex flex-col py-3 cursor-pointer items-center rounded-lg text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-50 dark:hover:bg-[#252525] dark:focus:bg-white/10 dark:active:bg-white/10">
+          <div className="flex flex-col py-3 cursor-pointer items-center rounded-lg text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-50 hover:bg-[#252525] focus:bg-white/10 ">
             <div className="flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ function Header() {
               Subscriptions
             </div>
           </div>{" "}
-          <div className="flex flex-col py-3 cursor-pointer items-center rounded-lg text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-50 dark:hover:bg-[#252525] dark:focus:bg-white/10 dark:active:bg-white/10">
+          <div className="flex flex-col py-3 cursor-pointer items-center rounded-lg text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-50 hover:bg-[#252525] focus:bg-white/10 ">
             <div className="flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -85,93 +85,96 @@ function Header() {
           </div>
         </div>
         {/* Top scroll bar kind of thing */}
-        <div className="bg-[#111111] fixed top-20 left-20 w-full ">
+        <div className="bg-[#111111] fixed top-20 md:left-20 left-0 w-full ">
           <ul className="flex ml-2">
             <li class="relative mx-2">
-              <a class="flex bg-gray-100 w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
-                <div className=" text-gray-800 font-semibold px-3">All</div>
+              <a class="flex bg-gray-100 w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#292929] focus:bg-white/10 ">
+                <div className=" text-gray-800 hover:text-gray-200 font-semibold px-3">
+                  All
+                </div>
               </a>
             </li>
             <li class="relative mx-2">
-              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#414141] focus:bg-white/10 ">
                 <div className=" text-gray-200 font-semibold px-3">CSS</div>
               </a>
             </li>
             <li class="relative mx-2">
-              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#414141] focus:bg-white/10 ">
                 <div className=" text-gray-200 font-semibold px-3">
                   Javascript
                 </div>
               </a>
             </li>
             <li class="relative mx-2">
-              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#414141] focus:bg-white/10 ">
                 <div className=" text-gray-200 font-semibold px-3">
                   Frameworks
                 </div>
               </a>
             </li>
             <li class="relative mx-2">
-              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#414141] focus:bg-white/10 ">
                 <div className=" text-gray-200 font-semibold px-3">
                   One Piece
                 </div>
               </a>
             </li>
             <li class="relative mx-2">
-              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#414141] focus:bg-white/10 ">
                 <div className=" text-gray-200 font-semibold px-3">Manhwa</div>
               </a>
             </li>
             <li class="relative mx-2">
-              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#414141] focus:bg-white/10 ">
                 <div className=" text-gray-200 font-semibold px-3">Anime</div>
               </a>
             </li>
             <li class="relative mx-2">
-              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#414141] focus:bg-white/10 ">
                 <div className=" text-gray-200 font-semibold px-3">
                   Pencil Sketch
                 </div>
               </a>
             </li>
             <li class="relative mx-2">
-              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#414141] focus:bg-white/10 ">
                 <div className=" text-gray-200 font-semibold px-3">Tech</div>
               </a>
             </li>
             <li class="relative mx-2">
-              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#414141] focus:bg-white/10 ">
                 <div className=" text-gray-200 font-semibold px-3">MacBook</div>
               </a>
             </li>
             <li class="relative mx-2">
-              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#414141] focus:bg-white/10 ">
                 <div className=" text-gray-200 font-semibold px-3">
                   Smartphones
                 </div>
               </a>
             </li>
             <li class="relative mx-2">
-              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#414141] focus:bg-white/10 ">
                 <div className=" text-gray-200 font-semibold px-3">Movies</div>
               </a>
             </li>
             <li class="relative mx-2">
-              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#414141] focus:bg-white/10 ">
                 <div className=" text-gray-200 font-semibold px-3">Pop</div>
               </a>
             </li>
             <li class="relative mx-2">
-              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-300 ease-linear focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-[#414141] dark:focus:bg-white/10 dark:active:bg-white/10">
+              <a class="flex bg-[#252525] w-auto h-8 cursor-pointer items-center truncate rounded-lg px-1 py-0 text-[0.875rem] outline-none transition duration-200 ease-linear  text-gray-300 hover:bg-[#414141] focus:bg-white/10 ">
                 <div className=" text-gray-200 font-semibold px-3">Music</div>
               </a>
             </li>
           </ul>
         </div>
+        {/* Top bar */}
         <input className="togglee" type="checkbox" />
         <div className="fixed top-0 left-2 container mx-auto flex flex-wrap pl-3.5 pt-4 flex-row items-center">
-          <div className="flex pt-1 pb-5">
+          <div className="flex pt-1 pb-5 text-gray-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -211,7 +214,7 @@ function Header() {
             </svg>
           </button>
           <div className="px-1"></div>
-          <button class="flex bg-[#181818] cursor-pointer items-center truncate rounded-full p-2 text-[0.875rem] outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-100 dark:hover:bg-[#303030] dark:focus:bg-white/10 dark:active:bg-white/10">
+          <button class="flex bg-[#181818] cursor-pointer items-center truncate rounded-full p-2 text-[0.875rem] outline-none transition duration-200 ease-linear hover:text-inherit hover:outline-none  text-gray-100 hover:text-gray-100 hover:bg-[#303030] focus:bg-white/10 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -225,7 +228,7 @@ function Header() {
             </svg>
           </button>
         </div>
-        <div className="fixed top-0 flex right-3 ">
+        <div className="fixed top-0 flex right-3 text-gray-100">
           <div className="px-4 py-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -266,6 +269,7 @@ function Header() {
             </svg>
           </div>
         </div>
+        {/* Sidebar Contents */}
         <ul
           id="menu"
           class=" pl-8 pt-5 pr-10 w-auto relative m-0 list-none"
@@ -273,7 +277,7 @@ function Header() {
         >
           <div>
             <div className="container mx-auto flex flex-wrap pl-3.5 pt-5 flex-row items-center">
-              <div className="flex pt-1 pb-5">
+              <div className="flex pt-1 pb-5 text-gray-50">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -291,9 +295,9 @@ function Header() {
                 </div>
               </div>
             </div>
-            <li class="relative">
+            <li class="relative ">
               <a
-                class="flex h-12 cursor-pointer items-center truncate rounded-[10px] px-4 py-0 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                class="flex h-12 cursor-pointer items-center rounded-[10px] px-4 py-0 text-[0.875rem]  outline-none transition duration-200 ease-linear hover:text-gray-50 hover:outline-none  text-gray-300 hover:bg-white/10 focus:bg-white/10 "
                 data-te-sidenav-link-ref
               >
                 <svg
@@ -310,9 +314,9 @@ function Header() {
                 <div className="font-semibold px-5">Home</div>
               </a>
             </li>
-            <li class="relative">
+            <li class="relative ">
               <a
-                class="flex h-12 cursor-pointer items-center truncate rounded-[10px] px-4 py-0 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                class="flex h-12 cursor-pointer items-center rounded-[10px] px-4 py-0 text-[0.875rem]  outline-none transition duration-200 ease-linear hover:text-gray-50 hover:outline-none  text-gray-300 hover:bg-white/10 focus:bg-white/10 "
                 data-te-sidenav-link-ref
               >
                 <svg
@@ -323,15 +327,15 @@ function Header() {
                 >
                   <path
                     fill="currentColor"
-                    d="M4 21V9l8-6l8 6v12h-6v-7h-4v7H4Z"
+                    d="M22 13V8l-5-3l-5 3l-5-3l-5 3v5l10 6l10-6M9 11H7v2H6v-2H4v-1h2V8h1v2h2v1m6 2c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1m3-2c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1Z"
                   />
                 </svg>
                 <div className="font-semibold px-5">Shorts</div>
               </a>
             </li>
-            <li class="relative">
+            <li class="relative ">
               <a
-                class="flex h-12 cursor-pointer items-center truncate rounded-[10px] px-4 py-0 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                class="flex h-12 cursor-pointer items-center rounded-[10px] px-4 py-0 text-[0.875rem]  outline-none transition duration-200 ease-linear hover:text-gray-50 hover:outline-none  text-gray-300 hover:bg-white/10 focus:bg-white/10 "
                 data-te-sidenav-link-ref
               >
                 <svg
@@ -353,9 +357,9 @@ function Header() {
           <hr />
           <div className="p-1" />
           <div>
-            <li class="relative">
+            <li class="relative ">
               <a
-                class="flex h-12 cursor-pointer items-center truncate rounded-[10px] px-4 py-0 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                class="flex h-12 cursor-pointer items-center rounded-[10px] px-4 py-0 text-[0.875rem]  outline-none transition duration-200 ease-linear hover:text-gray-50 hover:outline-none  text-gray-300 hover:bg-white/10 focus:bg-white/10 "
                 data-te-sidenav-link-ref
               >
                 <svg
@@ -372,9 +376,9 @@ function Header() {
                 <div className="font-semibold px-5">Library</div>
               </a>
             </li>
-            <li class="relative">
+            <li class="relative ">
               <a
-                class="flex h-12 cursor-pointer items-center truncate rounded-[10px] px-4 py-0 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                class="flex h-12 cursor-pointer items-center rounded-[10px] px-4 py-0 text-[0.875rem]  outline-none transition duration-200 ease-linear hover:text-gray-50 hover:outline-none  text-gray-300 hover:bg-white/10 focus:bg-white/10 "
                 data-te-sidenav-link-ref
               >
                 <svg
@@ -391,9 +395,9 @@ function Header() {
                 <div className="font-semibold px-5">History</div>
               </a>
             </li>
-            <li class="relative">
+            <li class="relative ">
               <a
-                class="flex h-12 cursor-pointer items-center truncate rounded-[10px] px-4 py-0 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                class="flex h-12 cursor-pointer items-center rounded-[10px] px-4 py-0 text-[0.875rem]  outline-none transition duration-200 ease-linear hover:text-gray-50 hover:outline-none  text-gray-300 hover:bg-white/10 focus:bg-white/10 "
                 data-te-sidenav-link-ref
               >
                 <svg
@@ -410,9 +414,9 @@ function Header() {
                 <div className="font-semibold px-5">Your videos</div>
               </a>
             </li>
-            <li class="relative">
+            <li class="relative ">
               <a
-                class="flex h-12 cursor-pointer items-center truncate rounded-[10px] px-4 py-0 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                class="flex h-12 cursor-pointer items-center rounded-[10px] px-4 py-0 text-[0.875rem]  outline-none transition duration-200 ease-linear hover:text-gray-50 hover:outline-none  text-gray-300 hover:bg-white/10 focus:bg-white/10 "
                 data-te-sidenav-link-ref
               >
                 <svg
@@ -429,9 +433,9 @@ function Header() {
                 <div className="font-semibold px-5">Watch later</div>
               </a>
             </li>
-            <li class="relative">
+            <li class="relative ">
               <a
-                class="flex h-12 cursor-pointer items-center truncate rounded-[10px] px-4 py-0 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                class="flex h-12 cursor-pointer items-center rounded-[10px] px-4 py-0 text-[0.875rem]  outline-none transition duration-200 ease-linear hover:text-gray-50 hover:outline-none  text-gray-300 hover:bg-white/10 focus:bg-white/10 "
                 data-te-sidenav-link-ref
               >
                 <svg
@@ -448,9 +452,9 @@ function Header() {
                 <div className="font-semibold px-5">Liked videos</div>
               </a>
             </li>
-            <li class="relative">
+            <li class="relative ">
               <a
-                class="flex h-12 cursor-pointer items-center truncate rounded-[10px] px-4 py-0 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                class="flex h-12 cursor-pointer items-center rounded-[10px] px-4 py-0 text-[0.875rem]  outline-none transition duration-200 ease-linear hover:text-gray-50 hover:outline-none  text-gray-300 hover:bg-white/10 focus:bg-white/10 "
                 data-te-sidenav-link-ref
               >
                 <svg
@@ -472,9 +476,9 @@ function Header() {
           <hr />
           <div className="p-1" />
           <div>
-            <li class="relative">
+            <li class="relative ">
               <a
-                class="flex h-12 cursor-pointer items-center truncate rounded-[10px] px-4 py-0 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                class="flex h-12 cursor-pointer items-center rounded-[10px] px-4 py-0 text-[0.875rem]  outline-none transition duration-200 ease-linear hover:text-gray-50 hover:outline-none  text-gray-300 hover:bg-white/10 focus:bg-white/10 "
                 data-te-sidenav-link-ref
               >
                 <svg
@@ -494,9 +498,9 @@ function Header() {
                 <div className="font-semibold px-5">Settings</div>
               </a>
             </li>
-            <li class="relative">
+            <li class="relative ">
               <a
-                class="flex h-12 cursor-pointer items-center truncate rounded-[10px] px-4 py-0 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                class="flex h-12 cursor-pointer items-center rounded-[10px] px-4 py-0 text-[0.875rem]  outline-none transition duration-200 ease-linear hover:text-gray-50 hover:outline-none  text-gray-300 hover:bg-white/10 focus:bg-white/10 "
                 data-te-sidenav-link-ref
               >
                 <svg
@@ -513,9 +517,9 @@ function Header() {
                 <div className="font-semibold px-5">Help</div>
               </a>
             </li>
-            <li class="relative">
+            <li class="relative ">
               <a
-                class="flex h-12 cursor-pointer items-center truncate rounded-[10px] px-4 py-0 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                class="flex h-12 cursor-pointer items-center rounded-[10px] px-4 py-0 text-[0.875rem]  outline-none transition duration-200 ease-linear hover:text-gray-50 hover:outline-none  text-gray-300 hover:bg-white/10 focus:bg-white/10 "
                 data-te-sidenav-link-ref
               >
                 <svg

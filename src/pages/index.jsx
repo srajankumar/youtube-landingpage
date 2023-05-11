@@ -4,7 +4,7 @@ import Body from "./components/Body";
 
 const Home = () => {
   return (
-    <div>
+    <div className="md:w-auto w-min">
       <Header />
       <Body />
     </div>
