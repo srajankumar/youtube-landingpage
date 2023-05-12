@@ -534,7 +534,7 @@ const Body = () => {
                   </div>
                   <div class="mt-4">
                     <div class="text-gray-100 title-font text-lg font-medium">
-                      Marvel Studios' Avengers: Endgame - Official Trailer
+                      Marvel Studios&apos; Avengers: Endgame - Official Trailer
                     </div>
                     <div class="text-gray-400 font-bold py-1 text-xs tracking-widest title-font mb-1">
                       <div className="flex">
@@ -600,7 +600,8 @@ const Body = () => {
                   </div>
                   <div class="mt-4">
                     <div class="text-gray-100 title-font text-lg font-medium">
-                      Character Demo - "Yae Miko: Anecdote of a Divine..."
+                      Character Demo - &quot;Yae Miko: Anecdote of a
+                      Divine...&quot;
                     </div>
                     <div class="text-gray-400 font-bold py-1 text-xs tracking-widest title-font mb-1">
                       <div className="flex">
@@ -831,7 +832,7 @@ const Body = () => {
                 </a>
                 <div class="mt-4">
                   <div class="text-gray-100 title-font text-lg font-medium">
-                    John Wick - "A Million Dollars Per Round"
+                    John Wick - &quot;A Million Dollars Per Round&quot;
                   </div>
                   <div class="text-gray-400 font-bold py-1 text-xs tracking-widest title-font mb-1">
                     <div className="pr-1 font-semibold text-sm">10M views</div>
@@ -1236,7 +1237,7 @@ const Body = () => {
                     <div class="text-gray-400 font-bold py-1 text-xs tracking-widest title-font mb-1">
                       <div className="flex">
                         <div className="pr-1 font-semibold text-sm">
-                          Barron's
+                          Barron&apos;s
                         </div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -1329,7 +1330,8 @@ const Body = () => {
                   </div>
                   <div class="mt-4">
                     <div class="text-gray-100 title-font text-lg font-medium">
-                      Tesla's Elon Musk Says He Is Stepping Aside as Twitter CEO
+                      Tesla&apos;s Elon Musk Says He Is Stepping Aside as
+                      Twitter CEO
                     </div>
                     <div class="text-gray-400 font-bold py-1 text-xs tracking-widest title-font mb-1">
                       <div className="flex">
