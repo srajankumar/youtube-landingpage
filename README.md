@@ -1,4 +1,4 @@
-# Youtube Clone
+# Youtube
 
 A dark - mode Youtube landing page
 
