@@ -1,6 +1,6 @@
-# Youtube Clone
+# Youtube Landing - Page
 
-A dark - mode Youtube Clone
+A dark - mode Youtube landing page
 
 ## Getting Started
 
